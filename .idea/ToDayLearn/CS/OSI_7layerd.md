@@ -21,7 +21,7 @@
 4. 출발지에서 데이터가 전송될 때 헤더가 추가되는데 2계층에서만 오류제어를 위해 꼬리부분에 추가됌
 5. 물리계층에서 1, 0 의 신호가 되어 전송매체 (동축케이블, 광섬유 등)을 통해 전송
 
-![Untitled]([https://s3-us-west-2.amazonaws.com/secure.notion-static.com/22fb75ee-9d9b-41bf-a23d-cfae5e77e673/Untitled.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FnDBM2%2FbtrfRDu9Q58%2FvhRakqTJi11wxkFPSoUtpk%2Fimg.jpg))
+![Untitled]([https://s3-us-west-2.amazonaws.com/secure.notion-static.com/22fb75ee-9d9b-41bf-a23d-cfae5e77e673/Untitled.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FnDBM2%2FbtrfRDu9Q58%2FvhRakqTJi11wxkFPSoUtpk%2Fimg.jpg)
 
 ![Untitled](https://velog.velcdn.com/images%2Fcgotjh%2Fpost%2F52907c8c-c149-4943-ad21-3996f44f912f%2F995EFF355B74179035.jpg)
 
