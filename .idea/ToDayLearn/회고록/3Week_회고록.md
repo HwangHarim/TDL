@@ -34,7 +34,7 @@
 
 ---
 
-이번주에는 RESTFUL API를 Spring boot와 JPA를 사용해서 TDD로 개발하는 연습을 했다.
+이번주에는 RESTFUL API Spring boot와 JPA를 사용해서 TDD로 개발하는 연습을 했다.
 
 처음에는 이해를 못했지만 지금은 어느정도 정리가 되어 이해가 되었다.
 
