@@ -42,19 +42,3 @@ URL마다 서블릿이 필요하다 보니, 매번 서블릿 인스턴스를 만
     - 클라이언트로부터 어떤 요청이 들어오면 서블릿 컨테이너가 요청을 받는다.
     - 이후 공통 작업을 DipatcherServlet에 처리하고, 이외 작업은 적절한 세부 컨트롤러로 위임한다.
 
-# Spring MVC의 동작 흐름
-
----
-
-![Untitled](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/2b7dd4f4-d31c-49eb-88e1-fde6b9baa57e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220803%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220803T081624Z&X-Amz-Expires=86400&X-Amz-Signature=4a64abf0de5c157a88a0bb00f83bf3a2a77f94ceac596e1c44d7c4d88e2dcbdd&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22&x-id=GetObject)
-
-1. DispatcherServlet으로 클라이언트의 웹 요청이 들어온다.
-2. 웹 요청을 Handler Mapping에 위임하여 해당 요청을 처리할 Handler(Controller)를 탐색한다.
-3. 찾은 Handler를 실행할 수 있는 HandlerAdapter를 탐색한다.
-4. 찾은 Handler Adapter를 사용해서 Handler의 메소드를 실행한다.
-5. Handler의 반환 값은 Model과 View이다.
-6. View 이름을 ViewResolver에게 전달하고, ViewResolver는 해당하는 View 객체를 전달한다.
-7. DispatcherServlet은 View에게 Model을 전달하고 화면 표시를 요청한다. 이때, Model이 null이면 View를 그대로 사용하고, 그렇지 않으면 View에 Model 데이터를 렌더링한다.
-8. 최종적으로 DispatcherServlet은 View 결과(HttpServletResponse)를 클라이언트에게 반환한다.
-
-위 흐름은 @Controller 기준이며, @RestController의 경우 6번과 7번 과정이 생략된다. 즉, ViewResolver를 타지 않고 반환 값에 알맞는 MessageConverter를 찾아 응답 본문을 작성한다.
