@@ -1,3 +1,5 @@
+![img.png](https://howtodoinjava.com/wp-content/uploads/2016/08/Maven-to-Gradle.png)
+
 # Maven vs Gradle
 
 ---
@@ -40,6 +42,8 @@ POM은 약자 이름 그대로 Project Object Model의 정보를 담고 있는 �
 - 빌드 환경 : 사용자 환경 별로 달라질 수 있는 프로파일 정보
 - pom 연관 정보 : 의존 프로젝트(모듈), 상위 프로젝트, 포함하고 있는 하위 모듈 등
 
+![img.png](https://mblogthumb-phinf.pstatic.net/MjAyMDAzMTlfMTE2/MDAxNTg0NjExNTQzOTcx.v_j7UPxTS-2bQRuj8oyFmp-4uf--cE07InI6_mm4GDYg.1P4LAxGEc_EuTEvERb2u3YcnE2ShQ_6UymUVyFlYHesg.PNG.rla99tjr/image.png?type=w800)
+
 
 #Gradle
 
@@ -47,6 +51,9 @@ POM은 약자 이름 그대로 Project Object Model의 정보를 담고 있는 �
 > 
 > 기본 메이븐의 경우 XML로 라이브러리를 정의하고 활용하도록 되어 있으나, Gradle의 경우 **별도의 빌드스크립트를 통하여 사용할 어플리케이션 버전, 라이브러리등의 항목을 설정** 할 수 있다.
 >
+
+
+![img.png](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F9c1BF%2FbtrseRBGWVZ%2FeSGq4TV5XJIf7WD4M0rW70%2Fimg.png)
 
 
 ### 라이브러리 관리 
