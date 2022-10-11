@@ -26,7 +26,7 @@ Contoller, RestController에서만 적용이 가능합니다.(@Service 같은 �
 
 
     @ControllerAdvice
-    public class CustomExceptionHandler {
+        public class CustomExceptionHandler {
     
         @ExceptionHandler(Exception.class)
         public ResponseEntity<> handleAll(Exception ex){
@@ -37,14 +37,14 @@ Contoller, RestController에서만 적용이 가능합니다.(@Service 같은 �
    
 
     @ControllerAdvice
-    public class CustomExceptionHandler {
+        public class CustomExceptionHandler {
     
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<ErrorResponseEntity> handleAll(Exception ex){
-    ErrorResponseEntity response = new ErrorResponseEntity(ErrorCode.INTERNAL_SERVER_ERROR);
+        @ExceptionHandler(Exception.class)
+        public ResponseEntity<ErrorResponseEntity> handleAll(Exception ex){
+        ErrorResponseEntity response = new ErrorResponseEntity(ErrorCode.INTERNAL_SERVER_ERROR);
     
-    return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
-     }
+        return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
     }
 
 ---
