@@ -1,7 +1,7 @@
 ## @ControllerAdvice 사용 방법
 
 
-###@ControllerAdvice란?
+### @ControllerAdvice란?
 
 > @ControllerAdvice란 모든 Controller에서 발생할 수 있는 예외를 잡아 처리해주는 어노테이션입니다.
 
@@ -11,10 +11,10 @@
 Contoller, RestController에서만 적용이 가능합니다.(@Service 같은 빈에서는 적용이 안됩니다.)
 
 
-###🖊 개요
+### 🖊 개요
 @ControllerAdvice는 Advice가 이름에 들어있는 걸 보아 AOP의 Advice인듯 하고 클래스를 살펴보면 런타임에 동작하고 @Component가 달려있어서 이 어노테이션을 달면 자동으로 Bean등록이 된다. 역할은 컨트롤러에서 발생하는 예외처리이며 포인트컷 역할로 @ExceptionHandler가 있다. @ExceptionHandler는 메서드를 대상으로 런타임에 동작하며 파라미터로 Throwable 가능한 클래스(Exception 클래스)를 배열로(여러개) 받을 수 있다. 따라서 @ExceptionHandler에 파라미터로 넘긴 여러개의 Exception이 포인트컷의 조건이 되어 지정된 메소드가 동작한다.
 
-###🖊 사용법
+### 🖊 사용법
 1. Exception을 관리할 클래스에 @ControllerAdvice를 달아준다.
 
 
