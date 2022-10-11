@@ -18,10 +18,10 @@ Contoller, RestController에서만 적용이 가능합니다.(@Service 같은 �
 1. Exception을 관리할 클래스에 @ControllerAdvice를 달아준다.
 
 
-       @ControllerAdvice
-    public class CustomExceptionHandler {
+    @ControllerAdvice
+        public class CustomExceptionHandler {
 
-    }
+        }
 2. 해당 클래스에 범위를 지정할 @ExceptionHandler를 메서드에 달아준다.
 
 
@@ -32,20 +32,20 @@ Contoller, RestController에서만 적용이 가능합니다.(@Service 같은 �
         public ResponseEntity<> handleAll(Exception ex){
 
         }
-    }
+     }
 3. 메서드에 해당 범위에 맞는 Excpetion이 컨트롤러에서 Throw 됐을 때 컨트롤러가 리턴할 값을 지정해준다.
    
 
     @ControllerAdvice
-        public class CustomExceptionHandler {
+            public class CustomExceptionHandler {
     
-        @ExceptionHandler(Exception.class)
-        public ResponseEntity<ErrorResponseEntity> handleAll(Exception ex){
-        ErrorResponseEntity response = new ErrorResponseEntity(ErrorCode.INTERNAL_SERVER_ERROR);
+            @ExceptionHandler(Exception.class)
+            public ResponseEntity<ErrorResponseEntity> handleAll(Exception ex){
+            ErrorResponseEntity response = new ErrorResponseEntity(ErrorCode.INTERNAL_SERVER_ERROR);
     
-        return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+            }
         }
-    }
 
 ---
 >**주의사항/알아 둘 것**
