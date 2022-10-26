@@ -90,7 +90,7 @@ B-Tree의 Key-Value 값들은 항상 Key를 기준으로 오름차순 정렬입�
 - 말단의 리프 노드들끼리는 LinkedList 구조로 서로를 참조하고 있습니다.
 
 ---
-## 고려 사항
+_## 고려 사항
 
 인덱스는 Index는 항상 최신 상태로 정렬되기 위해, 데이터 갱신(INSERT, UPDATE, DELETE) 작업에 대해 추가적인 연산이 발생합니다.   
 
@@ -106,6 +106,6 @@ B-Tree의 Key-Value 값들은 항상 Key를 기준으로 오름차순 정렬입�
 - https://tecoble.techcourse.co.kr/post/2021-09-18-db-index/
 - https://www.youtube.com/watch?v=edpYzFgHbqs
 - youtube.com/watch?v=edpYzFgHbqs&list=RDCMUC-mOekGSesms0agFntnQang&start_radio=1&rv=edpYzFgHbqs&t=0
-- https://velog.io/@emplam27/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-B-Tree
+- https://velog.io/@emplam27/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-B-Tree_
 
     
